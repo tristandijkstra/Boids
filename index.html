@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boids</title>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/pixi.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <script src="boids.js"></script>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        canvas {
+            margin: 0;
+        }
+        .menu {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            z-index: 2;
+            width: 100%;
+            margin: 0;
+            /* background: red; */
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            /* opacity: 0.1; */
+            
+            
+        }
+        .item {
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-left: 25px;
+            color: white;
+            display: inline;
+            text-decoration: none;
+            position: relative;
+
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        #version {
+            vertical-align: bottom;
+            font-size: 12px;
+            padding-top: 35px;
+            /* padding-bottom: 10px; */
+        }
+    </style>
+</head>
+<!-- <script src="pixi.js"></script> -->
+<body>
+    <div class="menu">
+        <a href="http://tristandijkstra.com" class="item link">Home</a>
+        <a href="https://github.com/IrTrez/Boids" class="item link">Github</a>
+        <div class="item" id="version">Boids v0.1</div>
+        <!-- 
+        <input type="range" min="0.001" max="0.1" value="0.01" class="slider" id="rule1">
+        <div class="item" id="rule1result"></div>
+        <input type="range" min="1" max="100" value="50" class="slider" id="rule2">
+        <div class="item" id="rule2result"></div>
+        <input type="range" min="5" max="10" value="8" class="slider" id="rule3">
+        <div class="item" id="rule3result"></div>
+        <div class="item">Repelling Mouse</div>
+        <input type="checkbox" name="MouseFeature" id="MouseFeature" checked="checked"> -->
+    </div>
+</body>
+</html>
