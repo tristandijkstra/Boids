@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+canvas {
+    margin: 0;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    z-index: 2;
+    width: 100%;
+    margin: 0;
+    font-family: 'Enriqueta', serif;
+    font-weight: 400;
+}
+
+.item {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
+    color: white;
+    height: 60px;
+    width: 60px;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.itemHighlight {
+    color: #37505c;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.item:hover {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.iteminitem {
+    width: 60px;
+    margin-top: 9px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.about {
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    background: #2E434D;
+    color: white;
+    font-family: 'Enriqueta', serif;
+    right: -600px;
+    padding: 50px;
+    padding-top: 0px;
+    box-shadow: 0px 0px 15px 0px rgba(25, 25, 25, 0.75);
+    z-index: 10;
+    margin-bottom: 100px;
+
+}
+
+.aboutInner {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 90px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 24px;
+    flex-grow: 5;
+    margin-top: 0px;
+}
+
+.aboutLinks {
+    bottom: 0px;
+    width: 300px;
+    width: 0 auto;
+    margin-bottom: 30px;
+}
+
+.aboutLink {
+    font-size: 40px;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    font-weight: 400;
+    color: white;
+}
+
+.inlineLink {
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    color: white;
+}
+
+.inlineLink>.linkeffect {
+    bottom: 0;
+}
+
+.linkeffect {
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: #98B6B1;
+    transition: height 0.3s, opacity 0.3s;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    opacity: 0.8;
+    z-index: -1;
+    margin-left: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.aboutLink:hover>.linkeffect {
+    height: 75%;
+}
+
+.inlineLink:hover>.linkeffect {
+    height: 95%;
+}
+
+#closeAbout {
+    position: absolute;
+    font-family: "Montserrat";
+    font-size: 40px;
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+    font-weight: 900;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+    margin-left: -15.5px;
+}
+
+#closeAbout:hover {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.closeInner {
+    margin-top: 5px;
+    margin-left: 1.5px;
+    text-align: center;
+}

@@ -1,4 +1,6 @@
 //www.kfish.org/boids/pseudocode.html
+// 37505c
+// 2E434D
 maxBirds = 100;
 // Attraction to eachother
 factorRule1 = 0.01
@@ -12,7 +14,9 @@ viewDistance = 100
 mouseFeature = true
 edgeMargin = 50
 
-const BoidImage = "assets/cursorosx.png";
+const BoidImage = "assets/custom4.png";
+const backgroundColorr = 0x37505c;
+// const BoidImage = "assets/cursorosx.png";
 
 
 limitVelocity = function(velocityVecx, velocityVecy) {
@@ -116,13 +120,15 @@ window.onload = function () {
     //     document.getElementById("rule3result").innerHTML = factorRule3;
     // };
 
+
+
     windowWidth = window.innerWidth;
     windowHeight = window.innerHeight;
 
     const app = new PIXI.Application({
         width: windowWidth,
         height: windowHeight,
-        backgroundColor: 0x000000,
+        backgroundColor: backgroundColorr,
         resolution: window.devicePixelRatio || 1,
         resizeTo: window,
     });
@@ -134,7 +140,6 @@ window.onload = function () {
 
     // Create a new texture
     const texture = PIXI.Texture.from(BoidImage);
-
     var Birds = [];
 
     // Initialise birds
